@@ -1,0 +1,12 @@
+bikes = ['yamaha']
+bikes.insert(1, 'ducati')
+print(bikes)
+bikes.insert(1, 'honda')
+print(bikes)
+#deleting a element
+del bikes[1]
+print (bikes)
+#pop elementes from a list
+popped_bikes = bikes.pop()
+print(bikes)
+print(popped_bikes)

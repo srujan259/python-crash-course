@@ -1,0 +1,5 @@
+numbers = list(range(1,20))
+print(numbers)
+print(f'first 3 items in the list are: {numbers[:3]}')
+print(f'last 3 items in the list are: {numbers[-3:]}')
+print(f'middle items in the list are: {numbers[3:7]}')
