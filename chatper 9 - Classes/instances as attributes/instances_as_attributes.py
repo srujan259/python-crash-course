@@ -37,6 +37,25 @@ class Car:
         """ Fill gas tank """
         print("Its time to fill the gas tank!")
 
+class Battery:
+    """ A simple attempt to model a battery for an electic car """
+
+    def __init__(self, battery_size=40):
+        """ Initialize the battery attributes """
+        self.battery_size = battery_size
+    
+    def describe_battery(self):
+        """ Print statement describing the battery size """
+        print(f"Battery of car is {self.battery_size}-kWH")
+
+    def get_range(self):
+        """ Print statement about the range this battery provides. """
+        if self.battery_size == 40:
+            range = 150
+        elif self.battery_size == 65:
+            range = 225
+        
+        print(f"This car can go {range} on full charge")
 
 class ElectricCar(Car):
     """ Represent aspects of a car, specific to electric vehicles. """
@@ -44,19 +63,14 @@ class ElectricCar(Car):
     def __init__(self, make, model, year):
         """ Initializes attributes of the parent class. """
         super().__init__(make, model, year)
-        self.battery_size = 40
+        #instances as attribes
+        self.battery = Battery()
     
-    def describe_battery(self):
-        """ Method to describe battery of an electric car """
-        print(f"Battery of car {self.make} {self.model} is {self.battery_size}-kWH")
-    
-    # overriding parent classs method
-    def fill_gas_tank(self):
-        """ Electric cars dont have gas tank """
-        print(f"Electric cars dont have gas tank ")
 
 
 my_ev6 = ElectricCar("kia", "ev6", 2024)
 print(my_ev6.get_descriptive_name())
-my_ev6.describe_battery()
-my_ev6.fill_gas_tank()
+my_ev6.battery.battery_size = 40
+my_ev6.battery.describe_battery()
+my_ev6.read_odometer()
+my_ev6.battery.get_range()
