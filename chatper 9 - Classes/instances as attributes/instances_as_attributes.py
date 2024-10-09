@@ -72,5 +72,4 @@ my_ev6 = ElectricCar("kia", "ev6", 2024)
 print(my_ev6.get_descriptive_name())
 my_ev6.battery.battery_size = 40
 my_ev6.battery.describe_battery()
-my_ev6.read_odometer()
 my_ev6.battery.get_range()
