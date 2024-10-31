@@ -2,7 +2,7 @@ import requests
 
 # Replace these with your GitHub username and personal access token
 GITHUB_USERNAME = "srujan259"
-TOKEN = "enter your token here"
+TOKEN = "token"
 
 def make_repo_private(repo_name):
     """Function to make a given repository private."""
@@ -22,6 +22,7 @@ def make_repo_private(repo_name):
 
 def get_all_repos():
     """Function to retrieve all repositories for the authenticated user."""
+    
     url = f"https://api.github.com/user/repos"
     headers = {
         "Authorization": f"token {TOKEN}",
