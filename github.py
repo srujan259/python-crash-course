@@ -2,7 +2,7 @@ import requests
 
 # Replace these with your GitHub username and personal access token
 GITHUB_USERNAME = "srujan259"
-TOKEN = "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"
+TOKEN = "enter your token here"
 
 def make_repo_private(repo_name):
     """Function to make a given repository private."""
