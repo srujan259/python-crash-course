@@ -1,0 +1,4 @@
+In python you can play with data types
+In python you can read files
+In python you can implement OOPs
+In python you can do MLOPS
