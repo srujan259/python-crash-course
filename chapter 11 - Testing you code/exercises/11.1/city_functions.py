@@ -5,3 +5,5 @@ def format_city_function(city, country, population=''):
     else:
         formatted_name = f"{city}, {country}"
     return formatted_name.title()
+
+#print(format_city_function('hyderabad', 'india', ' 1 core'))
